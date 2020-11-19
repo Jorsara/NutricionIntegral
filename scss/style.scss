@@ -1,0 +1,314 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    .movimiento{
+        transition: all 0.5s ease;
+    }
+    .movimiento:hover{
+        margin-top: -10px;
+    }
+}
+ul{
+    list-style: none;
+}
+nav{
+    padding: 13px;
+        .dropdown{
+            display:none;   
+        }
+        ul {
+          li{
+              a{
+                color: #707070;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    padding: 20px 5px;  
+              }
+              a:hover{
+                background: #bf986d;
+                color: white;   
+              }
+          }  
+        }
+}
+header{
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 13px;
+    position: fixed;
+    width: 100%;
+    background: white;
+        img{
+            display: inline-block;
+            max-height: 60px;
+            vertical-align: middle; 
+        }
+        nav{
+            ul{
+                display: flex;
+                margin-bottom: 0;
+                    li{
+                        padding: 0px 10px;  
+                    }
+            }
+        }
+}
+section.post{
+    padding: 40px 152px;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    justify-content: center;
+        .doscolumnas{
+            padding: 15px;  
+        }
+        #curriculum{
+            padding: 120px 200px 0px;
+        }
+}
+input{
+    height: 40px;
+    transition: all 0.5s ease;
+}
+input:focus{
+    font-size: 24px;
+}
+a.subheader__boton, .sobreMi__boton, .recetas__boton{
+    img{
+        transition: all 0.5s ease; 
+    }
+    img:hover{
+        margin-top: -10px;
+    }
+}
+label {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+form {
+    text-align: left;
+}
+button.btn.btn-primary.dropdown-toggle{
+            background-color: #c09b6e;
+            border-color: #c09b6e;
+}
+@mixin textos($familia, $tamano, $altura) {
+    font-family: $familia;
+    font-size: $tamano;
+    line-height: $altura;
+ }
+h1{
+    @include textos('Dancing Script', 70px, 80px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 20px black;
+}
+h2{
+    @include textos(inherit, 70px, 80px);
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 20px black;
+}
+h3{
+    @include textos('Dancing Script', 60px, 70px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h4{
+    @include textos(inherit, 20px, 30px);
+    letter-spacing: 5px;
+}
+.titulo2{
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+.sabiasQue__texto, .texto, .sobreMi__texto, .recetas__texto{
+    color: #707070;
+    font-size: 20px;
+}
+.contactoFooter img {
+    max-width: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.center{
+    text-align: center;
+}
+.campoForm{
+    .form-group{
+        .checkcont{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+.FlexBoxInfo {
+    display: flex;
+}
+.gridItem{
+    padding: 19px 18px;
+}
+.gridBlog{
+    display: grid;
+    grid-template-columns: 600px 600px;
+    justify-content: center;
+}
+.checkcont{
+    label{
+        margin-top: 0px;
+    margin-left: 10px;
+    }
+    input[type="checkbox"]{
+        width: auto;
+        height: auto; 
+    }
+}
+.dropdown-menu.show{ 
+    transform: translate3d(-72px, 38px, 0px) !important;
+    padding: 5px;
+        a{
+            color: #333;
+        }
+}
+.subheader{
+    color: #ffffff;
+    text-align: center;
+    padding: 200px 0;
+    background-position: bottom;
+}
+@each $seccion in recetas, home, blog, sobreMi, sabiasQue {
+    .subheader--#{$seccion} { 
+          Background-image: url('../img/subheader-#{$seccion}.jpg');
+           @extend.subheader;
+     }
+ } 
+
+ /*
+.home{
+    #subheader{
+        color: #ffffff;
+        background-image: url(../img/header_naranjas.jpg);
+        text-align: center;
+        padding: 200px 0;
+        background-position: bottom;
+    }
+}
+.blog{
+    #subheader{
+        color: #ffffff;
+        background-image: url(../img/header_hinojo.jpg);
+        text-align: center;
+        padding: 200px 0;
+        background-position: bottom;
+    }
+}
+.recetas{
+    #subheader{
+        color: #ffffff;
+        background-image: url(../img/header_plato.jpg);
+        text-align: center;
+        padding: 200px 0;
+        background-position: bottom;
+    }
+}
+*/
+#sobreMi{
+    background-image: url(../img/fondo_sobre_mi.jpg);
+    padding: 30px 0;
+        .col-md-6{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+}
+#blog{
+    .row{
+        .col-md-6{
+            .row{
+                transition: all 0.5s ease;
+                margin-bottom: 15px;
+                    p{
+                        margin-bottom: 0px;   
+                    }
+            }
+            .row:hover{
+                margin-top: -5px; 
+            }
+        }
+    }
+}
+#recetas{
+    background-image: url(../img/recetas_plato.jpg);
+    text-align: left;
+    padding: 200px;
+    background-position: bottom
+}
+#formulario{
+    text-align: center;
+    padding: 40px 0px;
+        label{
+            display: block;  
+        }
+}
+#footer{
+    color: #ffffff;
+    background-image: url(../img/footer.jpg);
+    text-align: center;
+    padding: 100px 0;
+    background-position: bottom;
+        .Interno{
+            background-image: url(../img/footer.jpg);
+        }
+        .tresColumnas{
+            padding: 0 4%;
+        text-align: left;
+        width: 24.33%;
+        }
+        ul{
+            padding: 0px; 
+        }
+        li{
+            a{
+                color: white;
+                text-decoration: none;   
+            }
+        }
+}
+@media (max-width: 768px) {
+    h2{
+        font-size:44px;
+    }
+    h1{
+        font-size:65px;
+    }
+    a.botonHeader img {
+        width: 200px;
+    }
+    .sabiasQue_texto, .texto, .sobreMi__texto, .recetas__texto {
+        text-align: center;
+    }
+    #recetas{
+        padding: 0px;
+    }
+    #recetas .col-md-12, section#sobreMi, section#blog {
+        text-align: center;
+    }
+    header nav ul{
+        display:none;
+    }
+    nav .dropdown{
+        display:block;
+    }
+    section#sobreMi {
+        background-size: cover;
+        background-position: top;
+    }
+}
