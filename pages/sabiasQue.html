@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/png" href="../img/favicon.png">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
 	<title>¿Sabias Que?</title>
@@ -16,40 +17,76 @@
 		<nav>
 			<ul>
                 <li><a href="../index.html">INICIO</a></li>
-				<li><a href="sabiasQue.html">¿SABIAS QUE?</a></li>
+				<li class="active"><a href="sabiasQue.html">¿SABIAS QUE?</a></li>
 				<li><a href="sobreMi.html">SOBRE MI</a></li>
 				<li><a href="blog.html">BLOG</a></li>
 				<li><a href="recetas.html">RECETAS</a></li>
 				<li><a href="../index.html#formulario">CONSULTAS</a></li>
 			</ul>
+			<div class="dropdown">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				  Menú
+				</button>
+				<div class="dropdown-menu">
+					<a href="../index.html">INICIO</a><br>
+					<a href="sabiasQue.html">¿SABIAS QUE?</a><br>
+					<a href="sobreMi.html">SOBRE MI</a><br>
+					<a href="blog.html">BLOG</a><br>
+					<a href="recetas.html">RECETAS</a><br>
+					<a href="../index.html#formulario">CONSULTAS</a>
+				</div>
+			</div>
 		</nav>
 	</header>
 	<!--Subheader-->
-	<section id="subheader" class="subheader subheader--sabiasQue">
-		<h1>¿Sabias Que?</h1>
-		<h2>CONOCE NUESTRAS ACTUALIZACIONES</h2>
-		<a class="botonHeader" href="#"><img src="../img/boton_header.png"></a>
+	<section id="subheader" class="subheader subheader--blog">
+		<div class="container-fluid">
+			<div class="row"> 
+				<div class="col-md-12">
+					<h1 class="subheader__titulo">¿Sabias Que?</h1>
+					<h2 class="subheader__subtitulo">CONOCE NUESTRAS ACTUALIZACIONES</h2>
+				</div>
+			</div>
+		</div>
 	</section>
 	<main>
 		<!--Info-->
 		<section id=info>
-			<img src="../img/img_app2.png" alt="vistaApp">
-			<div class=FlexBoxInfo>
-				<div>
-					<h4>SIGUE TU EVOLUCIÓN</h4>
-					<p>Gráficos con información sobre tu tratamiento. Peso, IMC, Masa grasa y libre de grasa.</p>
+			<div class="container">
+				<div class="row info--destacada">
+					<div class="col-md-12">
+						<img src="../img/img_app2.png" alt="vistaApp">
+					</div>	
 				</div>
-				<div>
-					<h4>PLANES ALIMENTARIOS</h4>
-					<p>Olvida los papeles y los emails, desde hoy, tendrás el plan alimentario siempre disponible.</p>
-				</div>
-				<div>
-					<h4>CHAT EN TIEMPO REAL</h4>
-					<p>Envía consultas al profesional y obtiene respuestas rápidas sobre tu tratamiento.</p>
-				</div>
-				<div>
-					<h4>REGISTRO DIARIO</h4>
-					<p>Con sólo un toque puedes indicarle al profesional cómo te fue ese día. Sólo eso, UN segundo por día!</p>
+				<div class="row info--cont">
+					<div class="col-md-3 columnasSabias"> 
+						<div>
+							<img src="../img/evolucion.png">
+							<h4>SIGUE TU EVOLUCIÓN</h4>
+							<p>Gráficos con información sobre tu tratamiento. Peso, IMC, Masa grasa y libre de grasa.</p>
+						</div>
+					</div>
+					<div class="col-md-3 columnasSabias"> 
+						<div>
+							<img src="../img/plan.png">
+							<h4>PLANES ALIMENTARIOS</h4>
+							<p>Olvida los papeles y los emails, desde hoy, tendrás el plan alimentario siempre disponible.</p>
+						</div>
+					</div>
+					<div class="col-md-3 columnasSabias"> 
+						<div>
+							<img src="../img/chat.png">
+							<h4>CHAT EN TIEMPO REAL</h4>
+							<p>Envía consultas al profesional y obtiene respuestas rápidas sobre tu tratamiento.</p>
+						</div>
+					</div>
+					<div class="col-md-3 columnasSabias"> 
+						<div>
+							<img src="../img/registro.png">
+							<h4>REGISTRO DIARIO</h4>
+							<p>Con sólo un toque puedes indicarle al profesional cómo te fue ese día. Sólo eso, UN segundo por día!</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -112,18 +149,19 @@
 			</div>
 			<div class="col-md-4 seccionesFooter"> 
 				<h4>SECCIONES</h4>
-					<ul>
-						<li><a href="index.html">INICIO</a></li>
-						<li><a href="#sobreMi">SOBRE MI</a></li>
-						<li><a href="pages/blog.html">BLOG</a></li>
-						<li><a href="pages/recetas.html">RECETAS</a></li>
-						<li><a href="#formulario">CONSULTAS</a></li>
-					</ul>
+						<ul>
+							<li><a href="../index.html">INICIO</a></li>
+							<li><a href="SabiasQue.html">¿SABIAS QUE?</a></li>
+							<li><a href="sobreMi.html">SOBRE MI</a></li>
+							<li><a href="blog.html">BLOG</a></li>
+							<li><a href="recetas.html">RECETAS</a></li>
+							<li><a href="../index.html#formulario">CONSULTAS</a></li>
+						</ul>
 			</div>
 			<div class="col-md-4 redesFooter"> 
 				<h4>REDES SOCIALES</h4>
-				<a href="#"><img src="../img/instagram.png"></a>
-				<a href="#"><img src="../img/facebook.png"></a>
+				<a href="https://www.instagram.com/nutricion_ib/" target="_blank"><img src="../img/instagram.png"></a>
+				<a href="https://www.facebook.com/nutricionintegralbahia" target="_blank"><img src="../img/facebook.png"></a>
 			</div>
 		</div>
 	</div>

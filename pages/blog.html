@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/png" href="../img/favicon.png">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
 	<title>Blog</title>
@@ -15,88 +16,123 @@
 		<a href="../index.html"><img src="../img/logo_horizontal.jpg" alt="logo"></a>
 		<nav>
 			<ul>
-				<li><a href="../index.html">INICIO</a></li>
+                <li><a href="../index.html">INICIO</a></li>
 				<li><a href="sabiasQue.html">¿SABIAS QUE?</a></li>
 				<li><a href="sobreMi.html">SOBRE MI</a></li>
-				<li><a href="blog.html">BLOG</a></li>
+				<li class="active"><a href="blog.html">BLOG</a></li>
 				<li><a href="recetas.html">RECETAS</a></li>
 				<li><a href="../index.html#formulario">CONSULTAS</a></li>
 			</ul>
+			<div class="dropdown">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				  Menú
+				</button>
+				<div class="dropdown-menu">
+					<a href="../index.html">INICIO</a><br>
+					<a href="sabiasQue.html">¿SABIAS QUE?</a><br>
+					<a href="sobreMi.html">SOBRE MI</a><br>
+					<a href="blog.html">BLOG</a><br>
+					<a href="recetas.html">RECETAS</a><br>
+					<a href="../index.html#formulario">CONSULTAS</a>
+				</div>
+			</div>
 		</nav>
 	</header>
-		<!--Subheader-->
-		<section id="subheader" class="subheader subheader--blog">
-			<h1>Nuestro Blog</h1>
-			<h2>enterate de las últimas novedades</h2>
-		</section>
+	<!--Subheader-->
+	<section id="subheader" class="subheader subheader--blog">
+		<div class="container-fluid">
+			<div class="row"> 
+				<div class="col-md-12">
+					<h1 class="subheader__titulo">Nuestro Blog</h1>
+					<h2 class="subheader__subtitulo">LAS ÚLTIMAS NOVEDADES</h2>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!--Post-->
 	<main>
-		<section class="post">
-			<div class="doscolumnas"> 
-				<img src="../img/ensalada.jpg" alt="logo">
-				<h5>ENSALADA LOREM</h5>
-				<p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Cum libero accusamus molestias sapiente, porro animi hic. 
-					Alias voluptatibus dolore laudantium mollitia velit. 
-					Nesciunt, rem quia. Commodi quo iure dolor magni.
-				</p>
+		<section class="post container">
+			<div class="row">
+					<div class="col-md-4">  
+						<a href="internaBlog.html"><img src="../img/dieta_vegetariana.jpg" alt="verduras">
+						<h5>Errores frecuentes de las dietas vegetarianas</h5>
+						<p class="texto">Cada vez nos encontramos con más casos en consulta 
+							de gente que quiere empezar una dieta vegetariana o vegana, o 
+							padres que vienen porque sus hijos quieren seguir estas dietas. 
+							Muchas veces estos pacientes no saben por dónde empezar o no saben 
+							si la alimentación que están llevando es saludable. Hemos detectado que hay una…
+						</p></a>
+					</div>
+				<div class="col-md-4">  
+					<a href="internaBlog2.html"><img src="../img/afrontar_covid.jpg" alt="arcoiris">
+					<h5>Afrontamiento psicológico de la situación creada por el coronavirus (Covid-19)</h5>
+					<p class="texto">Estamos viviendo una situación que nunca imaginamos que viviríamos,  
+						en dos o tres días hemos pasado de hacer una vida normal, a estar confinados en casa. 
+						Esto puede afectar psicológicamente a muchas personas. Por eso, os daré algunos 
+						consejos para  protegeros a vosotros mismos de los daños emocionales del coronavirus (covid-19). 
+						Consejos para cuidar tu…
+					</p></a>
+				</div>
+				<div class="col-md-4"> 
+					<a href="internaBlog3.html"><img src="../img/recomendaciones.jpeg" alt="verdura">
+					<h5>Recomendaciones nutricionales para el Coronavirus (COVID-19)</h5>
+					<p class="texto">Desde Alimmenta queremos adaptar nuestros consejos y recomendaciones 
+						para que sigáis cuidando vuestros hábitos de alimentación desde casa durante este 
+						periodo en el que nuestro día a día ha cambiado totalmente como consecuencia del 
+						coronavirus (Covid-19) . Por eso la nutricionista de Alimmenta Adriana Oroz os 
+						invita a tomar nota de estos consejos que os…
+					</p></a>
+				</div>
 			</div>
-			<div class="doscolumnas"> 
-				<img src="../img/ensalada.jpg" alt="logo">
-				<h5>ENSALADA LOREM</h5>
-				<p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Cum libero accusamus molestias sapiente, porro animi hic. 
-					Alias voluptatibus dolore laudantium mollitia velit. 
-					Nesciunt, rem quia. Commodi quo iure dolor magni.
-				</p>
-			</div>
-			<div class="doscolumnas"> 
-				<img src="../img/ensalada.jpg" alt="logo">
-				<h5>ENSALADA LOREM</h5>
-				<p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Cum libero accusamus molestias sapiente, porro animi hic. 
-					Alias voluptatibus dolore laudantium mollitia velit. 
-					Nesciunt, rem quia. Commodi quo iure dolor magni.
-				</p>
-			</div>
-			<div class="doscolumnas"> 
-				<img src="../img/ensalada.jpg" alt="logo">
-				<h5>ENSALADA LOREM</h5>
-				<p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Cum libero accusamus molestias sapiente, porro animi hic. 
-					Alias voluptatibus dolore laudantium mollitia velit. 
-					Nesciunt, rem quia. Commodi quo iure dolor magni.
-				</p>
-			</div>
-			<div class="doscolumnas"> 
-				<img src="../img/ensalada.jpg" alt="logo">
-				<h5>ENSALADA LOREM</h5>
-				<p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Cum libero accusamus molestias sapiente, porro animi hic. 
-					Alias voluptatibus dolore laudantium mollitia velit. 
-					Nesciunt, rem quia. Commodi quo iure dolor magni.
-				</p>
-			</div>
-			<div class="doscolumnas"> 
-				<img src="../img/ensalada.jpg" alt="logo">
-				<h5>ENSALADA LOREM</h5>
-				<p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Cum libero accusamus molestias sapiente, porro animi hic. 
-					Alias voluptatibus dolore laudantium mollitia velit. 
-					Nesciunt, rem quia. Commodi quo iure dolor magni.
-				</p>
+			<div class="row">
+					<div class="col-md-4"> 
+						<a href="internaBlog4.html"><img src="../img/cenas_bajas.jpg" alt="comida">
+						<h5>7 cenas bajas en calorías</h5>
+						<p class="texto">Cuando nos proponemos perder peso es importante que todas nuestras 
+							comidas principales sean saludables, también la cena. Además, la cena suele 
+							preparase en casa, al momento, usando los alimentos que tenemos en la nevera o 
+							la despensa y por tanto nos es más fácil controlar su calidad nutricional y 
+							aporte calórico. Por otro lado, es…
+						</p></a>
+					</div>
+				<div class="col-md-4"> 
+					<a href="internaBlog5.html"><img src="../img/embarazo.jpg" alt="logo">
+					<h5>La alimentación en el primer trimestre de embarazo</h5>
+					<p class="texto">Durante el primer trimestre del embarazo ocurren muchos 
+						cambios internos que no son visibles ya que el bebé aún es muy pequeño.
+						Se trata de un período donde se forman todos los órganos y las células 
+						de nuestro bebé se reproducen a gran velocidad. El ácido fólico durante 
+						el embarazo Uno de los nutrientes a…
+					</p></a>
+				</div>
+				<div class="col-md-4"> 
+					<a href="internaBlog6.html"><img src="../img/9_recetas.jpg" alt="logo">
+					<h5>9 alimentos que te ayudan a perder peso</h5>
+					<p class="texto">Cuando damos consejos para pérdida de peso los nutricionistas 
+						siempre remarcamos qué tipo de alimentos hay que dejar de incluir en la dieta 
+						diaria, pero en este artículo y vídeo te queremos hablar de qué alimentos hay 
+						que introducir en la dieta si tu objetivo es adelgazar o perder peso. Se trata 
+						de alimentos saludables…
+					</p></a>
+				</div>
 			</div>
 		</section>
 		<!--Recetas-->
-		<section id="recetas">
-			<h3>Recetas</h3>
-			<h4>saludables y ricas</h4>
-			<p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-				Cum libero accusamus molestias sapiente, porro animi hic. 
-			</p>
-			<a class="botonHeader" href="#"><img src="../img/boton_recetas.png"></a>		
+		<section id="recetas" class="recetas">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="recetas__titulo">Recetas</h3>
+						<h4 class="recetas__subtitulo">saludables y ricas</h4>
+						<p class="recetas__texto">Las mejores recetas para bajar de peso </br>o mantener una dieta saludable.</br>
+							Recetas ricas, caseras, fáciles de preparar </br>y que te ayudarán a mantener un cuerpo sano.
+						</p>
+						<a class="recetas__boton" href="recetas.html"><img src="../img/boton_recetas.png"></a>	
+					</div>
+				</div>	
+			</div>
 		</section>
-			<!-- Formulario --> 
+		<!-- Formulario --> 
 		<section id="formulario">
 			<div class="container">
 				<div class="row">
@@ -156,17 +192,18 @@
 				<div class="col-md-4 seccionesFooter"> 
 					<h4>SECCIONES</h4>
 						<ul>
-							<li><a href="index.html">INICIO</a></li>
-							<li><a href="#sobreMi">SOBRE MI</a></li>
-							<li><a href="pages/blog.html">BLOG</a></li>
-							<li><a href="pages/recetas.html">RECETAS</a></li>
-							<li><a href="#formulario">CONSULTAS</a></li>
+							<li><a href="../index.html">INICIO</a></li>
+							<li><a href="SabiasQue.html">¿SABIAS QUE?</a></li>
+							<li><a href="sobreMi.html">SOBRE MI</a></li>
+							<li><a href="blog.html">BLOG</a></li>
+							<li><a href="recetas.html">RECETAS</a></li>
+							<li><a href="../index.html#formulario">CONSULTAS</a></li>
 						</ul>
 				</div>
 				<div class="col-md-4 redesFooter"> 
 					<h4>REDES SOCIALES</h4>
-					<a href="#"><img src="../img/instagram.png"></a>
-					<a href="#"><img src="../img/facebook.png"></a>
+					<a href="https://www.instagram.com/nutricion_ib/" target="_blank"><img src="../img/instagram.png"></a>
+					<a href="https://www.facebook.com/nutricionintegralbahia" target="_blank"><img src="../img/facebook.png"></a>
 				</div>
 			</div>
 		</div>

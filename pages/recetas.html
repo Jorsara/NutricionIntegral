@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/png" href="../img/favicon.png">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
 	<title>Recetas</title>
@@ -15,126 +16,116 @@
 		<a href="../index.html"><img src="../img/logo_horizontal.jpg" alt="logo"></a>
 		<nav>
 			<ul>
-				<li><a href="../index.html">INICIO</a></li>
+                <li><a href="../index.html">INICIO</a></li>
 				<li><a href="sabiasQue.html">¿SABIAS QUE?</a></li>
 				<li><a href="sobreMi.html">SOBRE MI</a></li>
 				<li><a href="blog.html">BLOG</a></li>
-				<li><a href="recetas.html">RECETAS</a></li>
+				<li class="active"><a href="recetas.html">RECETAS</a></li>
 				<li><a href="../index.html#formulario">CONSULTAS</a></li>
 			</ul>
+			<div class="dropdown">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				  Menú
+				</button>
+				<div class="dropdown-menu">
+					<a href="../index.html">INICIO</a><br>
+					<a href="sabiasQue.html">¿SABIAS QUE?</a><br>
+					<a href="sobreMi.html">SOBRE MI</a><br>
+					<a href="blog.html">BLOG</a><br>
+					<a href="recetas.html">RECETAS</a><br>
+					<a href="../index.html#formulario">CONSULTAS</a>
+				</div>
+			</div>
 		</nav>
 	</header>
 	<!--Subheader-->
-	<section id="subheader" class="subheader subheader--recetas">
-		<h1>Bienvenidos</h1>
-		<h2>VIDA SALUDABLE</h2>
-		<a class="botonHeader" href="#"><img src="../img/boton_header.png"></a>
-	</section>
-	<main>
-		<!--Post-->
-		<section class="post">
-			<div class="doscolumnas"> 
-				<img src="../img/ensalada.jpg" alt="logo">
-				<h5>ENSALADA LOREM</h5>
-				<p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Cum libero accusamus molestias sapiente, porro animi hic. 
-					Alias voluptatibus dolore laudantium mollitia velit. 
-					Nesciunt, rem quia. Commodi quo iure dolor magni.
-				</p>
-			</div>
-			<div class="doscolumnas"> 
-				<img src="../img/ensalada.jpg" alt="logo">
-				<h5>ENSALADA LOREM</h5>
-				<p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Cum libero accusamus molestias sapiente, porro animi hic. 
-					Alias voluptatibus dolore laudantium mollitia velit. 
-					Nesciunt, rem quia. Commodi quo iure dolor magni.
-				</p>
-			</div>
-			<div class="doscolumnas"> 
-				<img src="../img/ensalada.jpg" alt="logo">
-				<h5>ENSALADA LOREM</h5>
-				<p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Cum libero accusamus molestias sapiente, porro animi hic. 
-					Alias voluptatibus dolore laudantium mollitia velit. 
-					Nesciunt, rem quia. Commodi quo iure dolor magni.
-				</p>
-			</div>
-			<div class="doscolumnas"> 
-				<img src="../img/ensalada.jpg" alt="logo">
-				<h5>ENSALADA LOREM</h5>
-				<p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Cum libero accusamus molestias sapiente, porro animi hic. 
-					Alias voluptatibus dolore laudantium mollitia velit. 
-					Nesciunt, rem quia. Commodi quo iure dolor magni.
-				</p>
-			</div>
-			<div class="doscolumnas"> 
-				<img src="../img/ensalada.jpg" alt="logo">
-				<h5>ENSALADA LOREM</h5>
-				<p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Cum libero accusamus molestias sapiente, porro animi hic. 
-					Alias voluptatibus dolore laudantium mollitia velit. 
-					Nesciunt, rem quia. Commodi quo iure dolor magni.
-				</p>
-			</div>
-			<div class="doscolumnas"> 
-				<img src="../img/ensalada.jpg" alt="logo">
-				<h5>ENSALADA LOREM</h5>
-				<p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Cum libero accusamus molestias sapiente, porro animi hic. 
-					Alias voluptatibus dolore laudantium mollitia velit. 
-					Nesciunt, rem quia. Commodi quo iure dolor magni.
-				</p>
-			</div>
-		</section>
-			<!-- Formulario --> 
-		<section id="formulario">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h3>Contactate</h3>
-						<h4>¿Querés que hablemos?</h4>
-						<form  action="#" method="POST">
-							<div class="campoForm form-group">
-								<label for="nombre">Nombre:</label>
-								<input class="form-control" type="text" name="nombre" placeholder="Nombre">
-							</div>
-							<div class="campoForm form-group">
-								<label for="apellido">Apellido:</label>
-								<input class="form-control" type="text" name="apellido" placeholder="Apellido">
-							<div> 
-							<div class="campoForm form-group">
-								<label for="email">E-mail:</label>
-								<input class="form-control" type="text" name="email" placeholder="E-mail">
-							<div> 
-							<div class="campoForm form-group">
-								<label for="genero">género:</label>
-								<select class="form-control" name="genero" id="genero">
-								<option value="mujer">Mujer</option>
-								<option value="hombre">Hombre</option>
-								<option value="otro">Otro</option>
-								</select>
-							</div>	
-							<div class="campoForm form-group">
-								<label for="consultas">Consultas:</label>
-								<textarea class="form-control" name= "consultas"cols="40" rows="10"></textarea>
-							</div class="campoForm form-group">
-							
-							<div class="campoForm form-group checkcont">
-								<input class="" type="checkbox" name="acepta" value="1">
-								<label for="pregunta">Estoy interesado en el asesoramiento</label>
-								
-							</div>
-							<div class="campoForm form-group">
-								<input class="form-control" type="submit" value="ENVIAR">
-							</div>
-						</form>
-					</div>
+	<section id="subheader" class="subheader subheader--blog">
+		<div class="container-fluid">
+			<div class="row"> 
+				<div class="col-md-12">
+					<h1 class="subheader__titulo">Recetas</h1>
+					<h2 class="subheader__subtitulo">COMER RICO Y SANO</h2>
 				</div>
 			</div>
-		</section>
-	</main>
+		</div>
+	</section>
+	<main>
+	<!--Post-->
+	<section class="post container">
+		<div class="row">
+			<div class="col-md-4">
+				<a href="internarecetas.html"><img src="../img/hummus.jpg" alt="hummus">
+				<h5>HUMMUS DE LUPINES</h5>
+				<p class="texto">Si de tapear se trata, el hummus es uno de los dips que no pueden 
+					faltar en tu mesa. En este blog lo hemos hecho de porotos, y el clásico de garbanzos.
+					Pero, esta vez quisimos usar un ingrediente que amamos y transformó nuestras vidas cuando lo ...
+				</p></a>
+			</div>
+			<div class="col-md-4">
+				<a href="internarecetas2.html"><img src="../img/alf_maicen.jpg" alt="alfajores">
+				<h5>ALFAJORCITOS DE MAICENA SIN GLUTEN</h5>
+				<p class="texto">La vez pasada me antojé de alfajores de maicena y como los que tenemos en esta
+						página son los mejores que probé pensé en hacer esa receta. Pero como venía mi amiga 
+						Nadia con su hija Pauli a tomar la merienda decidí hacer una receta apta para ellas. ...
+				</p></a>
+			</div>
+			<div class="col-md-4">
+				<a href="internarecetas3.html"><img src="../img/salchicha_bombon.jpg" alt="salchichas">
+				<h5>SALCHICHAS BOMBÓN</h5>
+				<p class="texto">Se trata de una versión en miniatura de nuestras clásicas salchichas de arroz. 
+					Lo que hice para hacerlas pequeñas fue lo mismo que les conté en esta otra receta: simplemente 
+					enrollé la pasta en film y até con firmeza nudos -dejando a 1,5 o 2 cm de ...
+				</p></a>
+			</div>
+		</div>
+	</section>
+	<!-- Formulario --> 
+	<section id="formulario">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Contactate</h3>
+					<h4>¿Querés que hablemos?</h4>
+					<form  action="#" method="POST">
+						<div class="campoForm form-group">
+							<label for="nombre">Nombre:</label>
+							<input class="form-control" type="text" name="nombre" placeholder="Nombre">
+						</div>
+						<div class="campoForm form-group">
+							<label for="apellido">Apellido:</label>
+							<input class="form-control" type="text" name="apellido" placeholder="Apellido">
+						<div> 
+						<div class="campoForm form-group">
+							<label for="email">E-mail:</label>
+							<input class="form-control" type="text" name="email" placeholder="E-mail">
+						<div> 
+						<div class="campoForm form-group">
+							<label for="genero">género:</label>
+							<select class="form-control" name="genero" id="genero">
+							<option value="mujer">Mujer</option>
+							<option value="hombre">Hombre</option>
+							<option value="otro">Otro</option>
+							</select>
+						</div>	
+						<div class="campoForm form-group">
+							<label for="consultas">Consultas:</label>
+							<textarea class="form-control" name= "consultas"cols="40" rows="10"></textarea>
+						</div class="campoForm form-group">
+						
+						<div class="campoForm form-group checkcont">
+							<input class="" type="checkbox" name="acepta" value="1">
+							<label for="pregunta">Estoy interesado en el asesoramiento</label>
+							
+						</div>
+						<div class="campoForm form-group">
+							<input class="form-control" type="submit" value="ENVIAR">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<main>
 	<!--Footer-->
 	<section  id="footer">
 		<div class="container">
@@ -147,18 +138,19 @@
 				</div>
 				<div class="col-md-4 seccionesFooter"> 
 					<h4>SECCIONES</h4>
-						<ul>
-							<li><a href="index.html">INICIO</a></li>
-							<li><a href="#sobreMi">SOBRE MI</a></li>
-							<li><a href="pages/blog.html">BLOG</a></li>
-							<li><a href="pages/recetas.html">RECETAS</a></li>
-							<li><a href="#formulario">CONSULTAS</a></li>
-						</ul>
+					<ul>
+						<li><a href="../index.html">INICIO</a></li>
+						<li><a href="SabiasQue.html">¿SABIAS QUE?</a></li>
+						<li><a href="sobreMi.html">SOBRE MI</a></li>
+						<li><a href="blog.html">BLOG</a></li>
+						<li><a href="recetas.html">RECETAS</a></li>
+						<li><a href="../index.html#formulario">CONSULTAS</a></li>
+					</ul>
 				</div>
 				<div class="col-md-4 redesFooter"> 
 					<h4>REDES SOCIALES</h4>
-					<a href="#"><img src="../img/instagram.png"></a>
-					<a href="#"><img src="../img/facebook.png"></a>
+					<a href="https://www.instagram.com/nutricion_ib/" target="_blank"><img src="../img/instagram.png"></a>
+					<a href="https://www.facebook.com/nutricionintegralbahia" target="_blank"><img src="../img/facebook.png"></a>
 				</div>
 			</div>
 		</div>

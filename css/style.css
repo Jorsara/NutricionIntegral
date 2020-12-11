@@ -5,9 +5,9 @@ body {
 
 img {
   max-width: 100%; }
-  img .movimiento {
+  img.movimiento {
     transition: all 0.5s ease; }
-  img .movimiento:hover {
+  img.movimiento:hover {
     margin-top: -10px; }
 
 ul {
@@ -22,7 +22,7 @@ nav {
     text-decoration: none;
     transition: all 0.5s ease;
     padding: 20px 5px; }
-  nav ul li a:hover {
+    nav ul li a:hover, nav ul li.active a {
     background: #bf986d;
     color: white; }
 
@@ -46,14 +46,14 @@ header {
       padding: 0px 10px; }
 
 section.post {
-  padding: 40px 152px;
-  display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-  justify-content: center; }
-  section.post .doscolumnas {
-    padding: 15px; }
-  section.post #curriculum {
-    padding: 120px 200px 0px; }
+  text-decoration: none;
+  padding-top: 30px; }
+
+section.post.container .col-md-4 img {
+  margin-bottom: 20px; }
+
+#curriculum {
+    padding-top: 40px; }
 
 input {
   height: 40px;
@@ -177,6 +177,29 @@ h4 {
 .subheader--sabiasQue {
   Background-image: url("../img/subheader-sabiasQue.jpg"); }
 
+.columnasSabias {
+  text-align: center; }
+
+.row.info--cont {
+  margin-top: 50px; }
+
+img.internoBlog--img {
+  margin-top: 50px;
+  margin-bottom: 30px; }
+
+section.internoBlog {
+  padding-bottom: 30px }
+
+.internoBlog ul {
+  list-style: disc; }
+
+section#blog a {
+  color: inherit;
+  text-decoration: none; }
+
+section.post a {
+  color: inherit;
+  text-decoration: none; }
 /*
 .home{
     #subheader{
@@ -214,12 +237,19 @@ h4 {
     display: flex;
     flex-direction: column; }
 
+#sabiasQue{
+  padding-top: 30px; }
+
 #blog .row .col-md-6 .row {
   transition: all 0.5s ease;
   margin-bottom: 15px; }
-  #blog .row .col-md-6 .row p {
-    margin-bottom: 0px; }
 
+#blog .row .col-md-6 .row p {
+  margin-bottom: 0px; }
+
+#blog .row .row{
+  margin: 0; }
+  
 #blog .row .col-md-6 .row:hover {
   margin-top: -5px; }
 
@@ -253,9 +283,13 @@ h4 {
     color: white;
     text-decoration: none; }
 
+.mob{
+  display:block; }
+
 @media (max-width: 768px) {
   h2 {
-    font-size: 44px; }
+    font-size: 27px;
+    line-height: 35px; }
   h1 {
     font-size: 65px; }
   a.botonHeader img {
@@ -272,4 +306,14 @@ h4 {
     display: block; }
   section#sobreMi {
     background-size: cover;
-    background-position: top; } }
+    background-position: top; } 
+  .subheader {
+    padding: 90px 0 30px 0; } 
+  #curriculum iframe{
+    height:250px;
+  }
+  .mob{
+    display:block; }
+  .desk{
+    display:none; } }
+
